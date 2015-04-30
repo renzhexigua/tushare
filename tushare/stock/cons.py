@@ -30,11 +30,10 @@ PAGES = {'fd': 'index.phtml', 'dl': 'downxls.php', 'jv': 'json_v2.php',
          'dp':'all_fpya.php', '163dp':'fpyg.html',
          'emxsg':'JS.aspx', '163fh':'jjcgph.php',
          'newstock':'vRPD_NewStockIssue.php', 'zz500b':'000905cons.xls',
-         't_ticks':'vMS_tradedetail.php',
-         'qmd':'queryMargin.do', 'szsefc':'FrontController.szse',
-         'ssecq':'commonQuery.do'}
+         't_ticks':'vMS_tradehistory.php',
+         'qmd':'queryMargin.do', 'szsefc':'FrontController.szse'}
 TICK_COLUMNS = ['time', 'price', 'change', 'volume', 'amount', 'type']
-TODAY_TICK_COLUMNS = ['time', 'price', 'pchange', 'change', 'volume', 'amount', 'type']
+TODAY_TICK_COLUMNS = ['Time', 'Price', 'Pchange', 'Change', 'Volumn', 'Amount', 'Type']
 DAY_TRADING_COLUMNS = ['code', 'symbol', 'name', 'changepercent',
                        'trade', 'open', 'high', 'low', 'settlement', 'volume', 'turnoverratio']
 REPORT_COLS = ['code', 'name', 'eps', 'eps_yoy', 'bvps', 'roe',
@@ -81,7 +80,6 @@ INDEX_C_COMM = 'sseportal/ps/zhs/hqjt/csi'
 HS300_CLASSIFY_URL = '%s%s/%s/%s'
 HIST_FQ_URL = '%s%s/corp/go.php/vMS_FuQuanMarketHistory/stockid/%s.phtml?year=%s&jidu=%s'
 HIST_FQ_FACTOR_URL = '%s%s/api/json.php/BasicStockSrv.getStockFuQuanData?symbol=%s&type=qfq'
-SSEQ_CQ_REF_URL = '%s%s/assortment/stock/list/name'
 ALL_STK_URL = '%s%s/all.csv'
 HIST_FQ_COLS = ['date', 'open', 'high', 'close', 'low', 'volume', 'amount', 'factor']
 HIST_FQ_FACTOR_COLS = ['code','value']
